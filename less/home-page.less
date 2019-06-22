@@ -107,10 +107,42 @@
       }
 
       .sign-up-form {
+        width: 100%;
         display: none;
+        justify-content: center;
         flex-flow: column wrap;
         align-items: center;
         text-align: center;
+        position: relative;
+        left: 150px;
+
+        @media @phone {
+          left: 0;
+        }
+
+        h3 {
+          font-size: 3.5rem;
+          margin-bottom: 20px;
+        }
+
+        input {
+          align-self: center;
+          padding: 10px 80px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
+
+        button {
+          .btnProp(1.8rem, @btn-bg-color, 5px, white);
+          padding: 10px 30px 10px 30px;
+          cursor: pointer;
+          margin-top: 10px;
+
+          @media @phone {
+            width: 100%;
+            height: 75px;
+          }
+        }
       }
     }
 
@@ -118,11 +150,10 @@
       width: 46%;
       margin-left: 4%;
 
-      .keyframes(sizing;{
-        0% {transform: scale(1);}
-        50% {transform: scale(1.1)}
-        100% {transform: scale(1);}
-      });
+      .keyframes(
+        sizing;{0% {transform: scale(1) ;} 50% {transform: scale(1.1)} 100% {transform:
+          scale(1) ;}}
+      );
 
       .animation(sizing 3s linear infinite);
 
