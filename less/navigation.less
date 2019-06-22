@@ -1,28 +1,32 @@
 // Navigation code here
 
 .top {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 20px 0 20px 0;
+  background: @headerBackground;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  nav {
     display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
-    padding: 20px 0 20px 0;
-    background: whitesmoke;
+    justify-content: space-around;
+    width: 400px;
 
-    h1 {
-        font-size: 4rem;
-        margin-bottom: 20px;
-        text-align: center;
-    }
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: black;
 
-    nav {
-        display: flex;
-        justify-content: space-around;
-        width: 400px;
-        
-        a {
-            text-decoration: none;
-            font-size: 1.6rem;
-            color: black;
-        }
+      &:hover {
+        color: dodgerblue;
+      }
     }
+  }
 }

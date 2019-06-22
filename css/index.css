@@ -134,16 +134,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -182,6 +182,9 @@ p {
   text-decoration: none;
   font-size: 1.6rem;
   color: black;
+}
+.top nav a:hover {
+  color: dodgerblue;
 }
 footer {
   color: #22283B;
@@ -277,7 +280,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   font-size: 1.8rem;
-  background-color: #22283A;
+  background-color: #22283a;
   border-radius: 5px;
   color: white;
   transition: all 0.3s linear;
