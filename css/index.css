@@ -160,6 +160,35 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.night {
+  background: black;
+  color: white;
+  transition: all 0.3s linear;
+}
+.night h1,
+.night h2,
+.night h3,
+.night h4,
+.night h5 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+.night .top {
+  background: none;
+  color: white;
+}
+.night .top nav a {
+  color: white;
+}
+.night footer {
+  background: none;
+  color: white;
+}
+.day {
+  background: white;
+  color: black;
+  transition: all 0.3s linear;
+}
 .top {
   display: flex;
   justify-content: center;
@@ -167,11 +196,6 @@ p {
   align-content: center;
   padding: 20px 0 20px 0;
   background: whitesmoke;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
 }
 .top h1 {
   font-size: 4rem;
@@ -190,6 +214,12 @@ p {
 }
 .top nav a:hover {
   color: dodgerblue;
+}
+.top nav button {
+  font-size: 3rem;
+  background-color: transparent;
+  align-self: center;
+  border: none;
 }
 footer {
   color: #22283B;
@@ -306,12 +336,25 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  animation: sizing 3s linear infinite;
+}
+@keyframes sizing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
     margin-bottom: 10px;
     margin-left: 0;
+    animation: none;
   }
 }
 .home .walk .walk-img img {
