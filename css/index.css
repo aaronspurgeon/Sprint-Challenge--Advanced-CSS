@@ -160,26 +160,27 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.top {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   align-content: center;
-  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
+  background: whitesmoke;
 }
-header h1 {
-  font-size: 3.5rem;
+.top h1 {
+  font-size: 4rem;
   margin-bottom: 20px;
   text-align: center;
 }
-header nav {
+.top nav {
   display: flex;
   justify-content: space-around;
-  width: 350px;
+  width: 400px;
 }
-header nav a {
+.top nav a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: black;
 }
 footer {
@@ -197,6 +198,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -233,6 +237,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.6rem;
+  background-color: #22283A;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s linear;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #AFEEEE;
+  color: #696969;
+  transform: scale(1.1);
 }
 .home .walk .walk-img {
   width: 46%;
