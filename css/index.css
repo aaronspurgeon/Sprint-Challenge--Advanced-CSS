@@ -163,7 +163,7 @@ p {
 }
 .night {
   color: white;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
   background-color: #1C2833;
 }
 .night h1,
@@ -177,7 +177,7 @@ p {
 .night .top {
   background-color: #1C2833;
   color: white;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .night .top nav a {
   color: white;
@@ -189,10 +189,10 @@ p {
 .day {
   background: white;
   color: black;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .day .top {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .top {
   display: flex;
@@ -366,6 +366,9 @@ footer {
     width: 100%;
     height: 75px;
   }
+}
+.home .walk .walk-text .sign-up-form {
+  display: none;
 }
 .home .walk .walk-img {
   width: 46%;

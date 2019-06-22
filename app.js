@@ -1,7 +1,9 @@
 // an event handler that changes the body from day and night
 
-var body = document.querySelector('body');
-var btn = document.querySelector('.day-night-btn');
+const body = document.querySelector('body');
+const btn = document.querySelector('.day-night-btn');
+const form = document.querySelector('.sign-up-form');
+const formBtn = document.querySelector('.btn');
 
 
 btn.addEventListener('click', () => {
@@ -14,4 +16,8 @@ btn.addEventListener('click', () => {
         body.classList.add('day');
         btn.style.color = 'black';
     }
+})
+
+formBtn.addEventListener('click', () => {
+    form.style.display = 'block';
 })
