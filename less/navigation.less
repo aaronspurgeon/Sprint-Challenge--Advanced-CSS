@@ -39,6 +39,22 @@
         background-color: transparent;
         align-self: center;
         border: none;
+        cursor: pointer;
+        position: relative;
+        bottom: 9px;
+        left: 75px;
+
+        .keyframes(sizing;{
+            0% {transform: scale(1);}
+            50% {transform: scale(3)}
+            100% {transform: scale(1);}
+          });
+    
+          .animation(sizing 3s linear infinite);
+
+          @media @phone {
+              left: 0;
+          }
     }
   }
 }
