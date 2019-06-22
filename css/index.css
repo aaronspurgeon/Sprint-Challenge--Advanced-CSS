@@ -167,6 +167,11 @@ p {
   align-content: center;
   padding: 20px 0 20px 0;
   background: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .top h1 {
   font-size: 4rem;
