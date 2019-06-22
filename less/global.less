@@ -5,6 +5,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 html,
@@ -47,7 +48,7 @@ p {
   color: white;
   transition: all 1s linear;
   // background-image: url(../img/ep_naturalblack.png);
-  background-color: #1C2833;
+  background-color: @nightModeColor;
 
   h1,
   h2,
@@ -59,8 +60,9 @@ p {
   }
 
   .top {
-    background: none;
+    background-color: @nightModeColor;
     color: white;
+    transition: all 1s linear;
 
     nav {
 
@@ -71,7 +73,7 @@ p {
   }
 
   footer {
-    background: none;
+    background: @nightModeColor;
     color: white;
   }
 }
@@ -80,4 +82,8 @@ p {
   background: white;
   color: black;
   transition: all 1s linear;
+
+  .top {
+    transition: all 1s linear;
+  }
 }

@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -174,19 +175,23 @@ p {
   color: white;
 }
 .night .top {
-  background: none;
+  background-color: #1C2833;
   color: white;
+  transition: all 1s linear;
 }
 .night .top nav a {
   color: white;
 }
 .night footer {
-  background: none;
+  background: #1C2833;
   color: white;
 }
 .day {
   background: white;
   color: black;
+  transition: all 1s linear;
+}
+.day .top {
   transition: all 1s linear;
 }
 .top {
@@ -196,6 +201,11 @@ p {
   align-content: center;
   padding: 20px 0 20px 0;
   background: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .top h1 {
   font-size: 4rem;
@@ -251,6 +261,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 140px;
 }
 @media (max-width: 500px) {
   .home {
