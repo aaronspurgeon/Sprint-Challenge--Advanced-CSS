@@ -109,7 +109,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
@@ -137,4 +137,4 @@ After finishing your required elements, you can push your work further. These go
 
 * [x] Create a fixed navigation and add some opacity to the background
 
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [x] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
