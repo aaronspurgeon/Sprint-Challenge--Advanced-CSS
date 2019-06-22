@@ -19,5 +19,5 @@ btn.addEventListener('click', () => {
 })
 
 formBtn.addEventListener('click', () => {
-    form.style.display = 'block';
+    form.style.display = 'flex';
 })

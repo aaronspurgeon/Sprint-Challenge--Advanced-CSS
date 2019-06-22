@@ -369,6 +369,9 @@ footer {
 }
 .home .walk .walk-text .sign-up-form {
   display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
