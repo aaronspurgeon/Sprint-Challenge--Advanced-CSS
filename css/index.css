@@ -1,0 +1,444 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.night {
+  color: white;
+  transition: all 0.5s linear;
+  background-color: #1C2833;
+}
+.night h1,
+.night h2,
+.night h3,
+.night h4,
+.night h5 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+.night .top {
+  background-color: #1C2833;
+  color: white;
+  transition: all 0.5s linear;
+}
+.night .top nav a {
+  color: white;
+}
+.night footer {
+  background: #1C2833;
+  color: white;
+}
+.day {
+  background: white;
+  color: black;
+  transition: all 0.5s linear;
+}
+.day .top {
+  transition: all 0.5s linear;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 20px 0 20px 0;
+  background: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.top h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.top nav {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+.top nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
+.top nav a:hover {
+  color: dodgerblue;
+}
+.top nav button {
+  font-size: 3rem;
+  background-color: transparent;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 9px;
+  left: 75px;
+  animation: sizing 3s linear infinite;
+}
+@keyframes sizing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 500px) {
+  .top nav button {
+    left: 0;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  margin-top: 140px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 500px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 500px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-flow: column-reverse;
+    align-items: center;
+    padding: 15px;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.8rem;
+  background-color: #22283a;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s linear;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #AFEEEE;
+  color: #696969;
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 75px;
+  }
+}
+.home .walk .walk-text .sign-up-form {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 150px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .sign-up-form {
+    left: 0;
+  }
+}
+.home .walk .walk-text .sign-up-form h3 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.home .walk .walk-text .sign-up-form input {
+  align-self: center;
+  padding: 10px 80px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.home .walk .walk-text .sign-up-form button {
+  font-size: 1.8rem;
+  background-color: #22283a;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s linear;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.home .walk .walk-text .sign-up-form button:hover {
+  background-color: #AFEEEE;
+  color: #696969;
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .sign-up-form button {
+    width: 100%;
+    height: 75px;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+  animation: sizing 3s linear infinite;
+}
+@keyframes sizing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+    animation: none;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

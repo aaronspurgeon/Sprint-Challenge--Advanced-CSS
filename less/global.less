@@ -5,15 +5,21 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-html, body {
-  font-family: 'Ubuntu', sans-serif;
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
   color: @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
   color: @header-font-color;
 }
 
@@ -26,13 +32,58 @@ h3 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: @paragraphFontSize;
   line-height: 1.4;
 }
 
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
+// javascript day and night button
+
+.night {
+  color: white;
+  transition: all 0.5s linear;
+  // background-image: url(../img/ep_naturalblack.png);
+  background-color: @nightModeColor;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Russo One", sans-serif;
+    color: white;
+  }
+
+  .top {
+    background-color: @nightModeColor;
+    color: white;
+    transition: all 0.5s linear;
+
+    nav {
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  footer {
+    background: @nightModeColor;
+    color: white;
+  }
+}
+
+.day {
+  background: white;
+  color: black;
+  transition: all 0.5s linear;
+
+  .top {
+    transition: all 0.5s linear;
+  }
+}

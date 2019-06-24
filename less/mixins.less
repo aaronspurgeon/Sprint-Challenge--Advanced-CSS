@@ -1,1 +1,30 @@
 // Mixins Here
+
+@paragraphFontSize: 1.6rem;
+@headerBackground: whitesmoke;
+@nightModeColor: #1C2833;
+
+
+
+.btnProp(@fontsize, @bg-color, @bradius, @color) {
+    font-size: @fontsize;
+    background-color: @bg-color;
+    border-radius: @bradius;
+    color: @color;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: #AFEEEE;
+        color: #696969;
+        transform: scale(1.1);
+    }
+}
+
+
+.keyframes(@name; @arguments) {
+    @keyframes @name { @arguments();}
+}
+
+.animation(@arguments) {
+    animation: @arguments;
+}
